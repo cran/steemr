@@ -4,7 +4,7 @@
 \alias{follower}
 \title{Get a name list of an ID's followers and following}
 \usage{
-follower(id = "dapeng", method = c("steemdb.com", "steemdata.com"))
+follower(id = NA, method = c("steemdb.com", "steemdata.com"))
 }
 \arguments{
 \item{id}{character without '@'}

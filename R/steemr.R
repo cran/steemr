@@ -36,7 +36,8 @@ id_info <- function(id = 'dapeng', method = c('steemdb.com', 'steemsql')){
 #'
 #' @examples
 #' follower()
-follower <- function(id = 'dapeng', method = c('steemdb.com', 'steemdata.com')){
+follower <- function(id = NA, method = c('steemdb.com', 'steemdata.com')){
+  if(is.na(id)) return(print('Please give a valid ID.'))
   method <- match.arg(method)
   # from steemdb.com
   if (method == 'steemdb.com') {
