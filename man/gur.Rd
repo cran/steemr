@@ -16,5 +16,7 @@ a dataframe
 Get the utopian review data from utopian.rocks api
 }
 \examples{
+\dontrun{
 gur(NULL)
+}
 }

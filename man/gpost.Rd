@@ -27,5 +27,7 @@ a dataframe
 Get the complete info of a single given post. gpost means 'get a post'.
 }
 \examples{
+\dontrun{
 gpost("cn/@dapeng/steemit-markdown")
+}
 }

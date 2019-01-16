@@ -33,7 +33,8 @@ a blogdown-hugo web site
 Build a hugo blog site for a steem author
 }
 \examples{
+\dontrun{
 bblog()
-
+}
 
 }

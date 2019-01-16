@@ -20,5 +20,7 @@ A name list of an ID's followers and following
 Get a name list of an ID's followers and following. gfollow means 'get an ID's follower information'.
 }
 \examples{
+\dontrun{
 gfollow("dapeng")
+}
 }

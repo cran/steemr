@@ -20,5 +20,7 @@ A data frame of the voters
 Summary of the voters of a series of posts. avotep means 'analysis of the votes on the given posts retrieved with the appbase_api method.'
 }
 \examples{
+\dontrun{
 avotep()
+}
 }

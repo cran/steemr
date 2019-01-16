@@ -18,5 +18,7 @@ A connection to the SeemSQL server.
 Open Connections to the SteemSQL server. ssql means 'send to sql'.
 }
 \examples{
+\dontrun{
 ssql()
+}
 }

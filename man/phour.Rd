@@ -89,5 +89,7 @@ Hour rose plot. Copied and modified from the openair package.
 \code{phour()} plotted a 24-hour clock, indicating the active hours on the basis of a time column in a data frame. It is highly cumstomized on the basis of the \code{openair::windrose()} function`.
 }
 \examples{
+\dontrun{
 phour()
+}
 }

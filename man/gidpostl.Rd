@@ -25,5 +25,7 @@ A character string vector of an ID's post hyperlinks.
 Obtain an ID's post hyperlinks. gidpostl means 'get an ID's post links'.
 }
 \examples{
+\dontrun{
 gidpostl()
+}
 }

@@ -16,5 +16,7 @@ A dataframe of an ID's following info
 The id list of an id's following  from steemdb.com. gfollowing means 'get the following information'.
 }
 \examples{
+\dontrun{
 gfollowing("dapeng")
+}
 }

@@ -27,5 +27,7 @@ A list (and a diagram) of the voter report.
 Get the vote information of given IDs from SteemSQL. gvoter means 'get the voter activities.'
 }
 \examples{
+\dontrun{
 gvoter(voters = NA)
+}
 }

@@ -13,5 +13,7 @@ A numeric value of the Steem per MVest
 Get the value of Steem per Mvest
 }
 \examples{
+\dontrun{
 gspmv()
+}
 }

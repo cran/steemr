@@ -104,8 +104,10 @@ bmd <- function(post_df = NA,
 #'
 #' @return a blogdown-hugo web site
 #' @export
-#' @examples bblog()
-#'
+#' @examples
+#' \dontrun{
+#' bblog()
+#'}
 #'
 bblog <- function(author = NA,
                   post_df,

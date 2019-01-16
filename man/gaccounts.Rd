@@ -30,5 +30,7 @@ Get the Steem account information within a period from SteemSQL
 gaccounts means 'get account information'.
 }
 \examples{
+\dontrun{
 gaccounts()
+}
 }

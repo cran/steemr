@@ -21,5 +21,7 @@ a dataframe of the detailed information of the given posts
 Get the detailed information of given posts. gposts means 'get posts'.
 }
 \examples{
+\dontrun{
 gposts(c("cn/@dapeng/xuer-sale", "utopian-io/@dapeng/steemg-four-more"))
+}
 }

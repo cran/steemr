@@ -10,7 +10,10 @@
 #' @importFrom utils unzip write.table modifyList
 #' @export
 #'
-#' @examples ssql()
+#' @examples
+#' \dontrun{
+#' ssql()
+#' }
 ssql <- function(uid = NA,
                  pwd = NA){
   if(is.na(uid) | is.na(pwd)) {
@@ -35,7 +38,9 @@ ssql <- function(uid = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gid()
+#' }
 gid <- function(id = NA,
                 method = c('appbase_api',
                            'steemdb.com',
@@ -83,7 +88,9 @@ gid <- function(id = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gfollow('dapeng')
+#' }
 gfollow <- function(id = NA,
                     method = c('steemdb.com',
                                'steemsql.com',
@@ -131,7 +138,9 @@ gfollow <- function(id = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gfollowing('dapeng')
+#' }
 gfollowing <- function(id = NA){
   if(is.na(id)) {
     return(message('Please give a valid id.'))
@@ -157,7 +166,9 @@ gfollowing <- function(id = NA){
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gfollower('dapeng')
+#' }
 gfollower <- function(id = NA){
   if(is.na(id)) {
     return(message('Please give a valid id.'))
@@ -196,7 +207,9 @@ gfollower <- function(id = NA){
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gvotep()
+#' }
 gvotep <- function(postlink = NA){
   if(is.na(postlink)) {
     return(message('Please give a valid link.'))
@@ -228,7 +241,10 @@ gvotep <- function(postlink = NA){
 #' @return A list (and a diagram) of the voter report.
 #' @export
 #'
-#' @examples gvoter(voters = NA)
+#' @examples
+#' \dontrun{
+#' gvoter(voters = NA)
+#' }
 gvoter <- function(voters = NA,
                    from = Sys.Date() - 7,
                    to = Sys.Date(),
@@ -291,7 +307,9 @@ gvoter <- function(voters = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gpost('cn/@dapeng/steemit-markdown')
+#' }
 gpost <- function(postlink = NA,
                   method = c('steemdb.com',
                              'steemsql.com'),
@@ -373,7 +391,9 @@ gpost <- function(postlink = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gidpostl()
+#' }
 gidpostl <- function(id = NA,
                      method = c('steemdb.com',
                                 'steemsql.com',
@@ -423,7 +443,9 @@ gidpostl <- function(id = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gposts(c('cn/@dapeng/xuer-sale', 'utopian-io/@dapeng/steemg-four-more'))
+#' }
 gposts <- function(postlinks = NA,
                    method = c('steemdb.com',
                               'steemsql.com',
@@ -474,7 +496,9 @@ gposts <- function(postlinks = NA,
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' gidposts()
+#' }
 gidposts <- function(id = NA,
                      method = c('steemdb.com',
                                 'steemsql.com',
@@ -526,7 +550,10 @@ gidposts <- function(id = NA,
 #' @return A dataframe with the ID's posts
 #' @export
 #'
-#' @examples gblog()
+#' @examples
+#' \dontrun{
+#' gblog()
+#' }
 gblog <- function(id = NA){
   if(is.na(id)) return(print('Please give a valid ID.'))
   getBlog(id)
@@ -545,7 +572,10 @@ gblog <- function(id = NA){
 #' @return A data frame of the account information with a figure
 #' @export
 #'
-#' @examples gaccounts()
+#' @examples
+#' \dontrun{
+#' gaccounts()
+#' }
 gaccounts <- function(from = Sys.Date() - 7,
                       to = Sys.Date(),
                       select = c('name', 'created', 'post_count', 'last_post'),
@@ -589,7 +619,10 @@ gaccounts <- function(from = Sys.Date() - 7,
 #' @return A data frame of the comment information with a figure
 #' @export
 #'
-#' @examples gcomments()
+#' @examples
+#' \dontrun{
+#' gcomments()
+#' }
 gcomments <- function(id = NA,
                       from = Sys.Date() - 7,
                       to = Sys.Date(),
@@ -633,7 +666,10 @@ gcomments <- function(id = NA,
 #' @return A data frame of the delegation information with a figure
 #' @export
 #'
-#' @examples gdelegation()
+#' @examples
+#' \dontrun{
+#' gdelegation()
+#' }
 gdelegation <- function(id = NA,
                         sql_con,
                         if_plot = FALSE){
@@ -680,7 +716,10 @@ gdelegation <- function(id = NA,
 #' @return A numeric value of the Steem per MVest
 #' @export
 #'
-#' @examples gspmv()
+#' @examples
+#' \dontrun{
+#' gspmv()
+#' }
 gspmv <- function(){
   steemdb <- readLines('https://steemdb.com')
   spm <- steemdb[grep(pattern = 'steem_per_mvests', steemdb) + 1]
@@ -697,7 +736,10 @@ gspmv <- function(){
 #' @return a data frame of the CNer
 #' @export
 #'
-#' @examples gcner()
+#' @examples
+#' \dontrun{
+#' gcner()
+#' }
 gcner <- function(mydate = Sys.Date()){
   # download data
   url <- paste0('https://uploadbeta.com/api/steemit/wechat/?cached&date=', mydate)
@@ -715,7 +757,6 @@ gcner <- function(mydate = Sys.Date()){
       repo[, mycol[!mycol %in%  names(repo)]] <- NA
       mymat <- rbind(mymat, repo[, mycol])
     }
-  }
   mymat$id <- idlink(mymat$name)
   if(!'esp' %in% names(mymat)) mymat$esp <- NA
   mymat$N <- rank(-mymat$esp)
@@ -723,7 +764,9 @@ gcner <- function(mydate = Sys.Date()){
 
   mymat$level <- unlist(sapply(mymat$esp, whale))
   mymat$intro <- "NA"
-  mymat[, c('N', 'id', mycol[2:length(mycol)], 'level', 'intro','name')] #'level',
+  return(mymat[, c('N', 'id', mycol[2:length(mycol)], 'level', 'intro','name')]) #'level',
+  }
+  return(message('The server is sorry that he does not response. Please try later.'))
 }
 
 #' Get the utopian review data from utopian.rocks api
@@ -733,7 +776,10 @@ gcner <- function(mydate = Sys.Date()){
 #' @return a dataframe
 #' @export
 #'
-#' @examples gur(NULL)
+#' @examples
+#' \dontrun{
+#' gur(NULL)
+#' }
 gur <- function(id = NA){
   if(is.null(id)) return(print('The ID cannot be NULL.'))
   # the function that converts milliseconds into date

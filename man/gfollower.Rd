@@ -16,5 +16,7 @@ character a dataframe of an ID's followers' info
 A list of an id's followers from steemdb.com. gfollower means 'get the follower information'.
 }
 \examples{
+\dontrun{
 gfollower("dapeng")
+}
 }

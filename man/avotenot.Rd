@@ -16,5 +16,7 @@ A character vector of the name list of the followers who have not voted the targ
 Find which followers have not voted a post yet. avotenot means 'analysis who has not voted yet'.
 }
 \examples{
+\dontrun{
 avotenot("cn/@dapeng/steemit-markdown")
+}
 }

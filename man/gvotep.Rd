@@ -16,5 +16,7 @@ A dataframe of a post's voter information
 A post's vote report based on steemdb.com. gvotep means 'get the vote information of a post.'
 }
 \examples{
+\dontrun{
 gvotep()
+}
 }

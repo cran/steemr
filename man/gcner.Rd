@@ -16,5 +16,7 @@ a data frame of the CNer
 Get the CNer name list
 }
 \examples{
+\dontrun{
 gcner()
+}
 }

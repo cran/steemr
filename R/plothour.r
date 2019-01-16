@@ -42,7 +42,9 @@
 #' @import openair
 #' @export
 #' @examples
+#' \dontrun{
 #' phour()
+#' }
 phour <- function(my_df = NA, col_time = 'created',
                   ws = "ws", wd = "hour360",
                   ws2 = NA, wd2 = NA,

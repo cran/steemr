@@ -16,5 +16,7 @@ A dataframe with the ID's posts
 Rename the getBlog() function from the steemRdata package
 }
 \examples{
+\dontrun{
 gblog()
+}
 }

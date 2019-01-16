@@ -22,5 +22,7 @@ Get the delegation information of a Steem ID from SteemSQL
 gdelegation means 'get delegation information'.
 }
 \examples{
+\dontrun{
 gdelegation()
+}
 }

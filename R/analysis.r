@@ -6,7 +6,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
 #' avotenot('cn/@dapeng/steemit-markdown')
+#' }
 avotenot <- function(postlink = NA){
   if(is.na(postlink)) {
     return(message('Please give a valid id.'))
@@ -36,7 +38,10 @@ avotenot <- function(postlink = NA){
 #' @return A data frame of the voters
 #' @export
 #'
-#' @examples avotep()
+#' @examples
+#' \dontrun{
+#' avotep()
+#' }
 avotep <- function(mypost = NA,
                    if_plot = TRUE,
                    top = 10){
